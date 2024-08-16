@@ -12,6 +12,8 @@
 
 
 // === strict check (checks values as well as datatypes)
+// == only checks value
 
 console.log("2" === 2) //false
 console.log("2" == 2)   //true
+
