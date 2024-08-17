@@ -23,6 +23,8 @@ console.log(id === anotherId); //they are not equal
 //Array , objects, Functions
 
 const heroes = ["batman","flash","ironman"]
+
+
 let myObj = {
     name: "Ritik",
     age : 22
@@ -33,3 +35,29 @@ const myFunction = function(){
 }
 
 console.log(typeof bigNumber);
+
+
+
+////////////////////////////////////////////////////////////////////////////////////
+
+//Stack(primitive) we get a copy, Heap(non primitive) we get a reference
+
+let myYoutube = "RitikRamola"
+
+let anothername = myYoutube
+anothername = "chaiaurcode"
+
+console.log(myYoutube);
+console.log(anothername);
+
+let userOne = {                    //heap
+    email:"user@google.com",
+    upi : "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email =  "ritik@gmail.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
