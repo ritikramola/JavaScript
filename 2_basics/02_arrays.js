@@ -28,3 +28,4 @@ let score3 = 3900
 
 console.log(Array.of(score1,score2,score3)); // gives [1000,2000,3900]
 
+
