@@ -5,8 +5,8 @@ let myDate = new Date()
 // console.log(myDate.toDateString());//only date
 // console.log(myDate.toISOString());
 // console.log(myDate.toJSON());
-// console.log(myDate.toLocaleDateString());
-// console.log(myDate.toLocaleString());
+ //console.log(myDate.toLocaleDateString());    //only dates
+ //console.log(myDate.toLocaleString());//gives us date n time in mm/ddd/yyyy format with hr:min:sec
 
 //console.log(typeof myDate);  //object
 
@@ -21,11 +21,11 @@ let createDate = new Date("01-13-2024") //mm-dd-yyyy
 
 let myTime = Date.now()
 
-// console.log(myTime)
+ console.log(myTime)
 
 // console.log(createDate.getTime())
 
-console.log(Math.floor(Date.now()/1000));
+console.log(Math.floor(Date.now()/1000)); //gives output in millisecond
 
 
 //toLocaleString can contain objects can perform various tasks
