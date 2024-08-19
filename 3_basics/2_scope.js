@@ -25,3 +25,16 @@ one()
 
 // interesting 
 
+function addone(num)
+{
+    return num+1
+}
+
+addone(7) //if we wtite addone before the (function addone) it will run
+
+const addtwo = function(num){  //also called as expression
+    return num+2
+}
+
+addtwo(8) //if we write addtwo() before (addtwo function) it won't run
+
