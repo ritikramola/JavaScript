@@ -21,11 +21,11 @@ let createDate = new Date("01-13-2024") //mm-dd-yyyy
 
 let myTime = Date.now()
 
- console.log(myTime)
+ console.log(myTime)   //gives output in millisecond
 
 // console.log(createDate.getTime())
 
-console.log(Math.floor(Date.now()/1000)); //gives output in millisecond
-
+console.log(Math.floor(Date.now()/1000)); //
+//gives output in second
 
 //toLocaleString can contain objects can perform various tasks
