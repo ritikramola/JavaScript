@@ -33,9 +33,23 @@ const obj3 = {...obj1,...obj2}
 
 
 //User[1].email
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+//destructuring
+
+const course = {
+    courseName : "javascript",
+    price : "999",
+    instructorName : "Ritik"
+}
+
+//course.instructorName
+
+const {instructorName : instructor} = course  //using instructor instead of writing instructorName we can use course
+
+console.log(instructor)         //
