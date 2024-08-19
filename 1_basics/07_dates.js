@@ -28,4 +28,14 @@ let myTime = Date.now()
 console.log(Math.floor(Date.now()/1000)); //
 //gives output in second
 
-//toLocaleString can contain objects can perform various tasks
+
+
+let newDate = new Date()
+console.log(newDate);
+console.log(newDate.getMonth());  //strts from 0
+console.log(newDate.getDate()); 
+
+newDate.toLocaleString('default',{  ///t//toLocaleString can contain objects can perform various tasks
+    weekday:"long",
+}
+)
