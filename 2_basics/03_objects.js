@@ -1,7 +1,9 @@
 //singleton - it is formed ith constructors not with literals
 //Object.create used in constructor and forms singleton
+//example :const User = new Object()
 
-//object literals
+
+//object literals     //const tinderUser = {}
 
 const mySym = Symbol("key1")
 
