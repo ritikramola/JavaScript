@@ -3,7 +3,7 @@
 //example :const User = new Object()
 
 
-//object literals     //const tinderUser = {}
+//object literals     //const User = {}
 
 const mySym = Symbol("key1")
 
