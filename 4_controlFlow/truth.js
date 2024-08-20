@@ -47,4 +47,24 @@ if(userEmail){
     
 // }
 
-// false == 0,false =='',0==''
+// false == 0,false =='',0=='' these all gives true
+
+//Nullish Coalescing Operator (??): null undefined
+
+let val1
+// val1 = 5 ?? 10      //5
+// val1 = null ?? 10   //10
+// var1 = undefined ?? 15 //15
+
+val1 = null ?? 10 ?? 20 //10
+
+
+console.log(val1)
+
+//ternary operator 
+
+condition ? true : false
+
+const Price = 100
+Price>=180 ? console.log("less than 80"):console.log("more than 80");
+;
