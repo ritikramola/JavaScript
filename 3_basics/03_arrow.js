@@ -10,7 +10,7 @@ const user = {
 
 }
 
- //user.welcomeMessage() //here conext ends output is ritik , welcome to website
+ //user.welcomeMessage() //here context ends output is ritik , welcome to website
 // user.username = "sam"
 // user.welcomeMessage() // here output will be sam , welcome to website
 
