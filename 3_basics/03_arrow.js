@@ -35,7 +35,7 @@ const user = {
 
 //arrow function
 
-// const chai = () => { //arrow function
+// const chai = () => {   //arrow function
 //     let username = "Ritik"
 //     console.log(this.username); //this will give undefined
     
