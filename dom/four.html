@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: azure;">
+    <ul class="lang">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+
+    //this method hav optimization problem
+    function addLanguage(langName)
+    {
+        const li = document.createElement('li');
+        li.innerrHTML = `${langName}`
+        document.querySelector(".lang").appendChild(li);
+    }
+    //addLanguage("python")
+    //addLanguage('cpp')
+
+    //this the optimized method
+    function addoptLang(langName) {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.lang').appendChild(li)
+    }
+    addoptLang("python")
+    addoptLang("cpp")
+
+    //edit 
+    const secondLang = document.querySelector("li:nth-child(2)")
+    //secondLang.innerHTML="Mojo"  //can be used but gives optimizing problem
+    const newli = document.createElement('li')
+    newli.textContent="Mojo"
+    secondLang.replaceWith(newli)   //use when reference is given
+
+    //edit method 2
+
+    const firstLang = document.querySelector("li:nth-child(1)") //or ("li:first-child")
+    firstLang.outerHTML = '<li>Typescript</li>'  //chnged with outerhtml
+
+    //removing element
+
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove();
+</script>
+</html>
