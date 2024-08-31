@@ -26,7 +26,16 @@ if(height === '' || height < 0 || isNaN(height))
   const res = (weight/((height * height)/ 10000)).toFixed(2);
 
 
-results.innerHTML = `<span>${res}</span>`
+//results.innerHTML = `<span>${res}</span>`
+
+if(res < 18.6){
+  results.innerHTML = `<p> bmi is ${res} which is Under Weight</p>`
+} else if (res > 18.6 && res <24.9 ){
+  results.innerHTML = `<p>bmi is ${res} which is Normal Weight</p>`
+}else 
+{
+  results.innerHTML = `<p>bmi is ${res} which is Over Weight</p>`
+}
 }
 });
 
