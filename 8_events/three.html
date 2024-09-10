@@ -11,9 +11,14 @@
     <button id="start">START</button>
 </body>
 <script>
-    setInterval(function(){
-        console.log("Hitesh",Date.now());
+    // setInterval(function(){
+    //     console.log("Ritik",Date.now());   
+    // },3000)
+    const sayDate = function(str)
+    {
+        console.log(str,Date.now());
         
-    })
+    }
+    setInterval(sayDate,2000,"hi")
 </script>
 </html>
