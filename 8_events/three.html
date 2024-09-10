@@ -19,6 +19,19 @@
         console.log(str,Date.now());
         
     }
-    setInterval(sayDate,2000,"hi")
+    // const intervalId = setInterval(sayDate,2000,"hi")
+    // //setInterval contains 3rd parameter too
+
+    // clearInterval(intervalId)
+    let interOne
+
+    document.querySelector('#start').addEventListener('click',function(){
+        interOne = setInterval(sayDate,2000,"hi")
+    })
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearInterval(interOne)
+    })
+    
 </script>
 </html>
