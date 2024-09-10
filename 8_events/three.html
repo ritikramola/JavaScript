@@ -8,30 +8,12 @@
 <body>
     <h1>Js with Events</h1>
     <button id="stop">Stop</button>
+    <button id="start">START</button>
 </body>
 <script>
-    // setTimeout(function(){
-    //     console.log("Ritik");
-        
-    // },2000)
-
-    //setTime changes after given time 
-    //setInterval keeps on chnging after the given time interval
-    //clearTime is used to stop settime
-
-    const sign = function(){
-        console.log("Ritik");
-    }
-    const changeText = function(){
-        document.querySelector('h1').innerHTML = "Javascript Series"
-    }
-
-    const changeMe = setTimeout(changeText,2000)
-    document.querySelector('#stop').addEventListener('click',function(){
-        clearTimeout(changeMe)
-        console.log("Stop");
+    setInterval(function(){
+        console.log("Hitesh",Date.now());
         
     })
-
 </script>
 </html>
