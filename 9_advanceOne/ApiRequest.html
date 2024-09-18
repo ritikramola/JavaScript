@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button ><img src="https://avatars.githubusercontent.com/u/11613311?v=4"></button>
+</body>
+<script>
+    const requestUrl = 'https://api.github.com/users/hiteshchoudhary'
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET",requestUrl)
+    xhr.onreadystatechange = function(){     //used to constantly record changes
+        console.log(xhr.readyState);  //to see which state is live rn
+        if(xhr.readyState === 4){   //4 means value is sent
+            const data = JSON.parse(this.responseText )    //this is use for context  
+                                // parse is used to change the string into object
+            console.log(typeof data);   //we need to convert this data into object
+            
+            console.log(data.followers); 
+            console.log(data.avatar_url);
+             
+            
+        }
+    }  
+    xhr.send()
+</script>
+</html>
