@@ -42,7 +42,7 @@ console.log(userOne);
 
 //to use it differently we should use (new) 
 
-const userOne = User('Ritik',8,true)
-const userTwo = User("Ramola",12,false)
+const userOne = new User('Ritik',8,true)
+const userTwo = new User("Ramola",12,false)
 
 console.log(userOne)
