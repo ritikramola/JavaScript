@@ -35,8 +35,8 @@ createUser.prototype.printMe = function(){
 
 //TO FIX THIS ERROR WE WILL USE  ------->>> new
 
-const chai =new createUser("chai",25)
-const tea =new createUser('tea',250)
+const chai = new createUser("chai",25)
+const tea = new createUser('tea',250)
 
 
 chai.printMe()
