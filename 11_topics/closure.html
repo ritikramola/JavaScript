@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body>
+    <button id="orange">orange</button>
+    <button id="green">green</button>
+</body>
+
+<script>
+
+    
+
+    //--------lexical scoping---------
+    
+    // function outer(){
+    //     let username = "Ritik"
+
+    //     function inner() {
+    //         let mine = "secret"
+    //         console.log("inner",username);
+            
+    //     }
+    //     function innerTwo() { //inner won't share mine with innerTwo
+    //         console.log("innerTwo",username);
+            
+    //     }
+    //     inner() //Ritik
+    //     innerTwo() //Ritik
+    // }
+    // outer()  //nothing in there
+    // console.log(username); 
+    
+//=====Closure===========
+//     function init() {
+//         let name = "Ritik";
+//         function displayName(){
+//             console.log(name);
+            
+//         }
+//         return displayName(); //it returns whole lexical scope to line no 47 
+//     }
+
+// // Here we will get complete init function with value of name  
+  
+//     const init = init();
+//     init(); //Ritik
+
+</script>
+</html>
